@@ -1,6 +1,3 @@
-const express = require('express');
-const session = require('express-session');
-const sequlize = require('./config/connection');
 const mysql = require('mysql2');
 
 const db = mysql.createConnection(
@@ -13,4 +10,4 @@ const db = mysql.createConnection(
     console.log('connected to buiseness_db')
 );
 
-
+module.exports = db;
