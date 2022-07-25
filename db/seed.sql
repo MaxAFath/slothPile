@@ -4,8 +4,8 @@ VALUES
 
 INSERT INTO roles (title, salary, dept_id)
 VALUES
-('manager', .1, 1);
+('manager', 60000, 1);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id, department)
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
-('Alpha', 'Alpha', 3, 'Alpha', 'mangement');
+('Alpha', 'Alpha', 1, 1);
