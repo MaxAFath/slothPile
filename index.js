@@ -1,24 +1,10 @@
-const express = require('express');
-const session = require('express-session');
-const sequlize = require('./config/connection');
-const apiRoutes = require('./routes/index');
 const inquirer = require('inquirer');
 const connection = require('./db/connection');
 const mysql = require('mysql2');
-const { INTEGER } = require('sequelize');
 
-const PORT = process.env.PORT || 3001;
-const app = express();
+require('.env').config()
 
-app.use(express.urlencoded({ extend: false }));
-app.use(express.json());
-
-app.use('/api', apiRoutes);
-
-//default response for any other request (not found)
-app.use((req, res) => {
-    res.status(404).end();
-});
+prompt();
 
 function prompt() {
     inquirer.prompt({

@@ -2,10 +2,10 @@
     "name": "slothpile",
     "version": "1.0.0",
     "description": "",
-    "main": "server.js",
+    "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js"
+        "start": "node index.js"
     },
     "repository": {
         "type": "git",
@@ -25,6 +25,7 @@
         "express-fileupload": "^1.4.0",
         "express-handlebars": "^6.0.6",
         "express-session": "^1.17.3",
+        "inquirer": "^7.3.3",
         "mysql2": "^2.3.3",
         "sequelize": "^6.20.0"
     }
